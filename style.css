@@ -54,7 +54,7 @@ header {
   justify-content: space-between;
   background: #fcf0e8;
   box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
-  padding: 20px 100px;
+  padding: 8px 15px;
   transition: 0.5s;
 }
 header a span{
@@ -84,7 +84,10 @@ header a span{
   font-weight: 600;
   color: var(--text-color);
   /* column-gap: 0.5rem; */
-  width: 10rem;
+  width: 40px;
+}
+header a img{
+  margin-right: 5px;
 }
 .logo .bx {
   font-size: 24px;
@@ -664,6 +667,39 @@ textarea.input{
     left: 422px;
 }
 }
+@media (max-width: 1230px) {
+  header {
+    padding: 12px 4%;
+  }
+  #menu-icon {
+    display: initial;
+  }
+  .navbar {
+    position: absolute;
+    top: -570px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 0 4px rgb(14 55 54 / 15%);
+    transition: 0.2s all linear;
+    text-align: left;
+  }
+  .navbar a {
+    padding: 1rem;
+    margin: 1rem;
+    display: block;
+  }
+  .navbar a:hover,
+  .navbar .home-active {
+    border-radius: 00.5rem;
+    color: var(--bg-color);
+  }
+  .navbar.active {
+    top: 100%;
+  }
+}
 @media (max-width: 852px) {
   header {
     padding: 12px 4%;
@@ -776,6 +812,13 @@ textarea.input{
     top: 86px;
     width: 10.5rem;
     left: 300px;
+}
+.profile span{
+  display: none;
+}
+header{
+  display: flex;
+  justify-content: space-between;
 }
 }
 @media (max-width: 480px){
